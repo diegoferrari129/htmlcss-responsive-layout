@@ -1,5 +1,48 @@
-*{
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/************************************************
+    UTILITIES
+ ************************************************/
+
+/* LAYOUT */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col50 {
+    width: calc(50%);
+}
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+
+/* HEADER */
+.header {
+    background-color: #1890FF;
+    color: white;
+    width: 100%;
+    padding: 20px 30px 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav--mobile {
+    float: right;
+    margin-top: 13px;
 }
