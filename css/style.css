@@ -1,7 +1,7 @@
 /*************************************************
     GENERAL STYLES
  *************************************************/
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
 
 /* LAYOUT */
 .container {
-    max-width: 100%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -22,8 +22,18 @@
     flex-wrap: wrap;
 }
 
-.col50 {
+.row--active {
+    gap: 25px;
+}
+
+.col--50 {
     width: calc(50%);
+}
+
+.col--100 {
+    width: 100%;
+    background-color: aquamarine;
+    border: 1px solid black;
 }
 
 /************************************************
@@ -35,14 +45,36 @@
     background-color: #1890FF;
     color: white;
     width: 100%;
-    padding: 20px 30px 15px 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    padding: 20px 0px 15px 0px;
 }
 
 .nav--mobile {
     float: right;
     margin-top: 13px;
+}
+
+/* GET A DEMO APPLICATION */
+.demo {
+    margin: 65px 0px 90px 0px;
+}
+
+/* STRATEGIC PLANNING*//* BENEFITS OF WORKING WITH US *//* STRATEGIC PLANNING*/
+.app, .benefits, .start {
+    background-color:#9593e6;
+    padding: 60px 0;
+}
+
+.app__img {
+    width: 100%;
+}
+
+/* TESTIMONIALS *//* ABOUS US */
+.testimonials, .biography {
+    margin: 75px 0;
+}
+
+/* FOOTER */
+.footer {
+    background-color: brown;
+    padding: 60px 0;
 }
