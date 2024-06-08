@@ -13,7 +13,7 @@
 
 /* LAYOUT */
 .container {
-    max-width: 85%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -23,17 +23,43 @@
 }
 
 .row--active {
-    gap: 25px;
+    justify-content: space-between;
 }
 
-.col--50 {
-    width: calc(50%);
+.row__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.row__footer--active {
+    align-content: space-between;
 }
 
 .col--100 {
     width: 100%;
-    background-color: aquamarine;
     border: 1px solid black;
+}
+
+.col--66 {
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* STYLE */
+.card {
+    margin: 10px;
+    background-color: brown;
+    border: 1px solid black;
+}
+
+/* GET A DEMO APPLICATION *//* TESTIMONIALS */
+.demo, .testimonials .biography {
+    padding: 30px;
+}
+
+/* STRATEGIC PLANNING*//* BENEFITS OF WORKING WITH US *//* GET STARTED */
+.app, .benefits, .start {
+    background-color:#9593e6;
 }
 
 /************************************************
@@ -45,36 +71,111 @@
     background-color: #1890FF;
     color: white;
     width: 100%;
-    padding: 20px 0px 15px 0px;
+    padding: 20px 40px 40px 15px;
 }
 
-.nav--mobile {
-    float: right;
-    margin-top: 13px;
+.nav {
+    padding-top: 13px;
 }
 
-/* GET A DEMO APPLICATION */
-.demo {
-    margin: 65px 0px 90px 0px;
+.header__img {
+    padding-left: 25px;
 }
 
-/* STRATEGIC PLANNING*//* BENEFITS OF WORKING WITH US *//* STRATEGIC PLANNING*/
-.app, .benefits, .start {
-    background-color:#9593e6;
+/* STRATEGIC PLANNING*/
+.app{
     padding: 60px 0;
+    margin-top: 45px;
 }
 
 .app__img {
     width: 100%;
+    padding-top: 30px;
 }
 
-/* TESTIMONIALS *//* ABOUS US */
-.testimonials, .biography {
-    margin: 75px 0;
+.app__content {
+    padding: 0 10px;
+}
+
+/* BENEFITS OF WORKING WITH US */
+.benefits {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* GET STARTED */
+.start {
+    padding-top: 20px;
 }
 
 /* FOOTER */
 .footer {
     background-color: brown;
-    padding: 60px 0;
 }
+
+/************************************************
+    RESPONSIVE
+ ************************************************/
+ /* TABLET */
+ @media screen and (min-width: 768px) {
+
+    /* GET A DEMO APPLICATION */
+    .demo .col--66 {
+        width: calc(100% / 3 * 2);
+    }
+
+    .demo .col--100 {
+        width: calc(100% / 3);
+    }
+
+     /* BENEFITS OF WORKING WITH US */
+     .benefits .col--100 {
+        width: 50%;
+    }
+
+    /* ABOUS US */
+    .biography .col--66 {
+        width: calc(100% / 3 * 2);
+    }
+
+    .biography .col--100 {
+        width: calc(100% / 3);
+    }
+ }
+
+ /* DESKTOP */
+ @media screen and (min-width: 992px) {
+
+    /* LAYOUT */
+    .container {
+        width: 992px;
+    }
+
+    /* GET A DEMO APPLICATION */
+    .demo .col--66 {
+        width: calc(100% / 3 * 2);
+    }
+
+    .demo .col--100 {
+        width: calc(100% / 3);
+    }
+
+    /* STRATEGIC PLANNING*/
+    .app .col--100 {
+        width: 50%;
+    }
+
+    /* BENEFITS OF WORKING WITH US */
+    .benefits .col--100 {
+        width: calc(100% / 3);
+    }
+
+    /* ABOUS US */
+    .biography .col--66 {
+        width: calc(100% / 3 * 2);
+    }
+
+    .biography .col--100 {
+        width: calc(100% / 3);
+    }
+ }
