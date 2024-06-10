@@ -26,6 +26,10 @@ h1 {
     margin: 0 auto;
 }
 
+.container--small {
+    width: 768px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +49,10 @@ h1 {
 }
 
 .col--100 {
+    width: 100%;
+}
+
+.col--100--active {
     width: 100%;
 }
 
@@ -193,6 +201,10 @@ h1 {
 
 .app__content {
     padding: 0 10px;
+}
+
+.app h2 {
+    font-size: 30px;
 }
 
 .app h2, p {
@@ -363,8 +375,31 @@ h1 {
         width: calc(100% / 3);
     }
 
+    .col--66 .card {
+        text-align: left;
+    }
+
+    .demo img {
+        width: 50%;
+        position: relative;
+        display: block;
+    }
+
+    .card--h {
+        height: 96.5%;
+    }
+
+    /* STRATEGIC PLANNING */
+    .app h2 {
+        font-size: 45px;
+    }
+
      /* BENEFITS OF WORKING WITH US */
-     .benefits .col--100 {
+    .col--100--active {
+        width: 100%;
+    }
+
+    .benefits .col--100 {
         width: 50%;
     }
 
@@ -375,6 +410,19 @@ h1 {
 
     .biography .col--100 {
         width: calc(100% / 3);
+    }
+
+    .biography__content {
+        padding-right: 30px;
+        padding-left: 40px;
+    }
+
+    .start .container {
+        width: 600px;
+    }
+
+    .footer .container {
+        width: 600px;
     }
  }
 
@@ -396,8 +444,26 @@ h1 {
     }
 
     /* STRATEGIC PLANNING*/
+    .app .container {
+        width: 800px;
+    }
+
     .app .col--100 {
         width: 50%;
+    }
+
+    .app__content img {
+        padding-bottom: 100px;
+    }
+
+    .app h2 {
+        font-size: 30px;
+    }
+
+    .card__secondary {
+        position: relative;
+        top: 150px;
+        left: 50px;
     }
 
     /* BENEFITS OF WORKING WITH US */
@@ -413,4 +479,5 @@ h1 {
     .biography .col--100 {
         width: calc(100% / 3);
     }
+
  }
