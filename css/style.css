@@ -16,6 +16,15 @@ h1 {
     font-size: 40px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
 /************************************************
     UTILITIES
  ************************************************/
@@ -179,11 +188,23 @@ h1 {
     background-color: #1890FF;
     color: white;
     width: 100%;
-    padding: 20px 10px 15px 10px;
+    padding: 20px 10px 15px 15px;
 }
 
 .nav {
     padding-top: 13px;
+    display: none;
+}
+
+.nav--mobile {
+    display: block;
+    padding-top: 13px;
+}
+
+.button__header {
+    background-color: white;
+    color: black;
+    padding: 5px 10px 7px 10px;
 }
 
 /* STRATEGIC PLANNING*/
@@ -434,6 +455,14 @@ h1 {
         width: 992px;
     }
 
+    .nav {
+        display: block;
+    }
+
+    .nav--mobile {
+        display: none;
+    }
+
     /* GET A DEMO APPLICATION */
     .demo .col--66 {
         width: calc(100% / 3 * 2);
@@ -441,6 +470,11 @@ h1 {
 
     .demo .col--100 {
         width: calc(100% / 3);
+    }
+
+    .demo img {
+        display: flex;
+        
     }
 
     /* STRATEGIC PLANNING*/
