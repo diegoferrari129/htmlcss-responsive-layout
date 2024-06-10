@@ -7,6 +7,15 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    color: #9593e6;
+    font-size: 40px;
+}
+
 /************************************************
     UTILITIES
  ************************************************/
@@ -37,27 +46,118 @@
 
 .col--100 {
     width: 100%;
-    border: 1px solid black;
 }
 
 .col--66 {
     width: 100%;
-    border: 1px solid black;
 }
 
 /* STYLE */
 .card {
     margin: 10px;
-    background-color: brown;
-    border: 1px solid black;
+    padding: 10px;
+    background-color: #A8D8FF;
+    border-radius: 20px;
+    text-align: center;
 }
 
-/* GET A DEMO APPLICATION *//* TESTIMONIALS */
-.demo, .testimonials .biography {
-    padding: 30px;
+.card h3 {
+    color:#1890FF;
+    padding-top: 15px;
+    font-size: 20px;
 }
 
-/* STRATEGIC PLANNING*//* BENEFITS OF WORKING WITH US *//* GET STARTED */
+.card__title i {
+    display: block;
+    font-size: 50px;
+    padding: 35px 0 25px 0;
+    color: #1890FF;
+}
+
+.card p {
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card__secondary {
+    background-color: white;
+    color: black;
+}
+
+.card__secondary h3 {
+    color: black;
+}
+
+.card__tertiary {
+    color: #9593e6;
+    background-color: white;
+    text-align: left;
+    padding: 0 25px;
+}
+
+.card__tertiary p {
+    color: black;
+}
+
+.card__tertiary h3 {
+    color: #9593e6;
+    padding-top: 0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.card__tertiary h2 {
+    font-size: 40px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.square img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button {
+    color: white;
+    background-color: #1890FF;
+    padding: 10px 27px 12px 25px;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+.button__secondary {
+    border-radius: 100%;
+    padding: 10px 13.5px;
+    background-color: #9593e6;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.button--tertiary {
+    background-color: #9593e6;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.demo, .testimonials {
+    padding-top: 30px;
+}
+
 .app, .benefits, .start {
     background-color:#9593e6;
 }
@@ -71,46 +171,181 @@
     background-color: #1890FF;
     color: white;
     width: 100%;
-    padding: 20px 40px 40px 15px;
+    padding: 20px 10px 15px 10px;
 }
 
 .nav {
     padding-top: 13px;
 }
 
-.header__img {
-    padding-left: 25px;
-}
-
 /* STRATEGIC PLANNING*/
 .app{
     padding: 60px 0;
     margin-top: 45px;
+    color: white;
 }
 
 .app__img {
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .app__content {
     padding: 0 10px;
 }
 
+.app h2, p {
+    padding: 20px 0;
+}
+
+.app p {
+    line-height: 1.5;
+}
+
+/* TESTIMONIALS */
+.testimonials__content {
+    text-align: center;
+    padding: 40px 10px 0 10px;
+    line-height: 1.5;
+}
+
+.testimonials__content h2 {
+    color: #9593e6;
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.card__testimonials {
+    background-color: #9593e6;
+    color: white;
+}
+
+.card__testimonials h3 {
+    color: white;
+}
+
+.card__testimonials i {
+    font-size: 20px;
+    padding: 0 5px 5px 5px;
+}
+
+.card__testimonials p {
+    padding-top: 0;
+}
+
+.card__testimonials h4 {
+    padding-bottom: 20px;
+}
+
 /* BENEFITS OF WORKING WITH US */
 .benefits {
     margin-top: 30px;
     padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.benefits h2 {
+    padding: 40px 0 30px 0;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+/* ABOUT US */
+.biography {
+    padding: 50px 10px;
+}
+
+.biography h2 {
+    color: #9593e6;
+    line-height: 1.3;
+}
+
+.biography p {
+    line-height: 1.7;
+}
+
+.biography .square {
+    margin: 0;
+}
+
+.square i {
+    position: relative;
+    bottom: 160px;
+    left: 120px;
+    font-size: 50px;
+    color: #9593e6;
+}
+
+.button--biography {
+    color: white;
+    background-color: #9593e6;
+    padding: 5px 10px 7px 10px;
+    margin: 20px 0;
+    letter-spacing: normal;
 }
 
 /* GET STARTED */
 .start {
-    padding-top: 20px;
+    padding: 60px 10px;
+    text-align: center;
+    color: white;
+}
+
+.start__title {
+    color: rgba(255, 255, 255, 0.604);
+}
+
+.start h3 {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.start h2 {
+    padding-top: 15px;
+    font-size: 40px;
+    color: rgb(247, 192, 91);
+}
+
+.start p {
+    line-height: 1.5;
+}
+
+.button__start {
+    background-color: white;
+    color: #9593e6;
+    padding: 15px 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.copyright i {
+    font-size: 5px;
+}
+
+.copyright a {
+    color: white;
 }
 
 /* FOOTER */
 .footer {
-    background-color: brown;
+    background-color: #484848;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.footer a {
+    color: #9593e6;
 }
 
 /************************************************
